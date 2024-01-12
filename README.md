@@ -14,8 +14,8 @@ The repository of Applied machine learning system assignment. repository link: h
 - taskA.py: A script inclues all of the modules should be imported when perform and evaluate CNN model in Task A 
 ## B
 - '__init__.py': mark a directory as a Python package directory.
-- taskA.py: A script inclues all of the modules should be imported when perform CNN model in Task B
-- taskA.py: A script inclues all of the modules should be imported when evaluate CNN model in Task B
+- taskB.py: A script inclues all of the modules should be imported when perform CNN model in Task B
+- evaluation.py: A script inclues all of the modules should be imported when evaluate CNN model in Task B
 ## main.py
 file to excecute the code
 ## requirements.txt
