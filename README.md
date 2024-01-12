@@ -2,17 +2,17 @@
 The repository of Applied machine learning system assignment. repository link: https://github.com/Xingminliiii/ALMS-CW.git 
 
 # the role of each file
-- A
-'__init__.py': mark a directory as a Python package directory.
-
-taskA.py: A script inclues all of the modules should be imported when perform and evaluate CNN model in Task A 
-- B
-'__init__.py': mark a directory as a Python package directory.
-
-taskA.py: A script inclues all of the modules should be imported when perform CNN model in Task B
-  taskA.py: A script inclues all of the modules should be imported when evaluate CNN model in Task B
-  
-  
+## A
+- '__init__.py': mark a directory as a Python package directory.
+- taskA.py: A script inclues all of the modules should be imported when perform and evaluate CNN model in Task A 
+## B
+- '__init__.py': mark a directory as a Python package directory.
+- taskA.py: A script inclues all of the modules should be imported when perform CNN model in Task B
+- taskA.py: A script inclues all of the modules should be imported when evaluate CNN model in Task B
+## main.py
+file to excecute the code
+## requirements.txt
+All of the libraries required to implement the code
 
 # Machine Learning Project Setup
 
