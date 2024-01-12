@@ -1,6 +1,9 @@
 # ALMS-CW
 The repository of Applied machine learning system assignment. repository link: https://github.com/Xingminliiii/ALMS-CW.git 
 
+# the role of each file
+
+
 # Machine Learning Project Setup
 
 ## Installation
