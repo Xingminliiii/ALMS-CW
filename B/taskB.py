@@ -4,6 +4,8 @@ from keras.models import Sequential
 from keras.layers import Dense, Conv2D, Flatten, MaxPooling2D, Dropout
 from keras.optimizers import Adam
 
+# this script defines several function to implement Task B CNN model, including 
+# load dataset, pre-processing dataset, define cnn model and train cnn model
 def load_dataset(filepath):
     data = np.load(filepath)
     return (data[f] for f in ['train_images', 'train_labels', 'val_images', 'val_labels', 'test_images', 'test_labels'])
