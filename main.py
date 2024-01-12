@@ -9,15 +9,29 @@ from keras.callbacks import EarlyStopping, ModelCheckpoint
 import numpy as np
 
 def TASKA():
+    # function to perform Task A CNN model and evaluate its performance
+
+    # Load file 
     filepath = 'Datasets/pneumoniamnist.npz'
+
+    # Preprocess data
     x_train, y_train, x_val, y_val, x_test, y_test,\
         class_weights = load_and_preprocess_data(filepath)
+    
+    # Build Model
     model = build_model()
+    
+    # Compile and train model
     model, history = compile_and_train_model(model, x_train, y_train, x_val, y_val, class_weights)
+    
+    #Evaluate model 
     evaluate_model(model, x_test, y_test)
     plot_results(history)
 
 def TASKB():
+    # function to perform Task A CNN model and evaluate its performance
+
+    # Load file and define hyperparameteter
     filepath = 'Datasets/pathmnist.npz'
     model_path = 'B/MNIST_CNN.h5'
     num_classes = 9
@@ -26,6 +40,7 @@ def TASKB():
     epochs = 50
     batch_size = 128
 
+    # Preprocess data
     x_train, y_train, x_val, y_val, x_test, y_test = load_dataset(filepath)
     x_train, x_val, x_test = normalize_data(x_train, x_val, x_test)
     y_train, y_val, y_test = encode_labels(y_train, y_val, y_test, num_classes)
