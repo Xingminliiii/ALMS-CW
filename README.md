@@ -2,11 +2,11 @@
 The repository of Applied machine learning system assignment. repository link: https://github.com/Xingminliiii/ALMS-CW.git 
 
 # A brief description of the organization of project
-Task A in this study uses a 'Simple MNIST convnet,' a binary classification model consisting of three convolutional layers with a (2 × 2) filter size and two fully connected layers, to diagnose pneu- monia using the 'PneumoniaMNIST' dataset.
-Task B in this study engaged 'Architecture 3,' a multi- class classification model originally designed for the MNIST and Fashion MNIST datasets, to categorize the 'PathMNIST' dataset into nine distinct classes. Differing from the 'Simple MNIST convnet', 'Architecture 3' inte- grates an additional dropout layer following each convolu- tional layer and uses a softmax output for class categoriza- tion. 
-Learning curve for each Task is plotted. 
-Statistics for Task A is calculated, including: test accuracy, precision, recall, F1-score  and a kappa statistic, to evaluate Task A. 
-Extra confusion matrix and ROC curve is generated to evaluate the performance of Task B. 
+- Task A in this study uses a 'Simple MNIST convnet,' a binary classification model consisting of three convolutional layers with a (2 × 2) filter size and two fully connected layers, to diagnose pneu- monia using the 'PneumoniaMNIST' dataset.
+- Task B in this study engaged 'Architecture 3,' a multi- class classification model originally designed for the MNIST and Fashion MNIST datasets, to categorize the 'PathMNIST' dataset into nine distinct classes. Differing from the 'Simple MNIST convnet', 'Architecture 3' inte- grates an additional dropout layer following each convolu- tional layer and uses a softmax output for class categoriza- tion. 
+- Learning curve for each Task is plotted. 
+- Statistics for Task A is calculated, including: test accuracy, precision, recall, F1-score  and a kappa statistic, to evaluate Task A. 
+- Extra confusion matrix and ROC curve is generated to evaluate the performance of Task B. 
 
 # the role of each file
 ## A
