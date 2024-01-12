@@ -5,6 +5,7 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, classifica
 
 
 def B_evaluate_model(model, x_test, y_test, x_val, y_val):
+    # Function to get Loss and Accuracy of Testing and Validation data
     test_loss, test_accuracy = model.evaluate(x_test, y_test, verbose=0)
     val_loss, val_accuracy = model.evaluate(x_val, y_val, verbose=0)
     print(f"Test loss: {test_loss}")
@@ -34,6 +35,8 @@ def plot_training_history(history):
     plt.show()
 
 def generate_classification_report(model, x_test, y_test, batch_size, class_names):
+    # Function to generate the classfication report, including precision, recall, F1 score, and support
+    
     test_samples = x_test.shape[0]
     steps = np.ceil(test_samples / batch_size)
 
@@ -50,12 +53,16 @@ def generate_classification_report(model, x_test, y_test, batch_size, class_name
     print(classification_report(y_test.argmax(axis=1), res_pred_labels, target_names=class_names))
 
 def plot_confusion_matrix(y_test, predictions, target_names):
+    # function defined to plot confusion matrix
+    
     cm = confusion_matrix(y_test.argmax(axis=1), predictions)
     disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=target_names)
     disp.plot()
     plt.show()
 
 def plot_roc_curves(y_test, predictions, class_names):
+    # function defined to plot ROC curve
+    
     num_classes = len(class_names)
     true_labels = np.argmax(y_test, axis=1) if y_test.shape[1] > 1 else y_test
 
