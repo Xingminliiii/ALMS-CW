@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from keras import backend as K
 from keras.metrics import Precision, Recall
 
+# This function includes all functions needed to implement Task A cnn model
 
 def load_and_preprocess_data(filepath):
     data = np.load(filepath)
