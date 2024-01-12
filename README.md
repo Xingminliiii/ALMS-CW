@@ -4,6 +4,7 @@ The repository of Applied machine learning system assignment. repository link: h
 # the role of each file
 - A
 '__init__.py': mark a directory as a Python package directory.
+
 taskA.py: A script inclues all of the modules should be imported when perform and evaluate CNN model in Task A 
 - B
 '__init__.py': mark a directory as a Python package directory.
